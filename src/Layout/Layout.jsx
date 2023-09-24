@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
-            <div>
+        <div className='max-w-7xl mx-auto pb-10'>
+           
             <Navbar></Navbar>
-            </div>
+           
         
             <Outlet></Outlet>
         </div>
