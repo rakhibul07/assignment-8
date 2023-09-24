@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Donation from "../pages/Donation/Donation";
 import Statistics from "../pages/Statistics/Statistics";
+import CardDetails from "../components/CardDetails/CardDetails";
 
 const myCreatedRoute = createBrowserRouter([
 {
@@ -23,6 +24,11 @@ const myCreatedRoute = createBrowserRouter([
         {
             path: "/statistics",
             element: <Statistics></Statistics>
+        },
+        {
+            path: "/cards/:id",
+            element: <CardDetails></CardDetails>,
+            loader: ()=>fetch("/data.json")
         },
     ]
     
