@@ -18,34 +18,43 @@ const DetailsPage = ({ card }) => {
     if (!donationItem) {
       donationArray.push(card);
       localStorage.setItem("donation", JSON.stringify(donationArray));
-      swal("Good job!", "Successfully Added!", "success");
+      swal("Thank You!", "Successfully Added!", "success");
     } else {
       const isExist = donationItem.find((card) => card.id === id);
       if (!isExist) {
         donationArray.push(...donationItem, card);
         localStorage.setItem("donation", JSON.stringify(donationArray));
-        swal("Good job!", "Successfully Added!", "success");
+        swal("Thank You!", "Successfully Added!", "success");
       } else {
-        swal("Error!", "No Duplicate!", "error");
+        donationArray.push(...donationItem, card);
+        localStorage.setItem("donation", JSON.stringify(donationArray));
+        swal("Thank You!", "Successfully Added!", "success");
       }
     }
   };
 
   return (
     <div>
-      <div>
-      <img className="w-full h-[60vh] mx-auto" src={picture} />
-     <div className="">
-     <button 
-        onClick={handleAddToDonation} style={{backgroundColor:text_color}}
-        className="btn border border-none text-white hover:text-black relative bottom-20 left-10"
-      >
-        Donate ${price}
-      </button>
-     </div>
+      <div className="relative">
+        <img className="w-full h-[40vh] md:h-[60vh] mx-auto" src={picture} />
+        <div className="absolute bottom-0 left-0 w-full h-14 md:h-16 lg:h-20 bg-black opacity-30"></div>
       </div>
+
       <div>
-        <h2 className="text-3xl font-bold">{title}</h2>
+        <button
+          onClick={handleAddToDonation}
+          style={{
+            backgroundColor: text_color,
+           
+          }}
+          className="px-1 py-1 md:px-3 md:py-2 lg:py-3 rounded-md border text-xs border-none text-white hover:text-black relative bottom-9 md:bottom-12 left-2 lg:bottom-16 lg:left-8"
+        >
+          Donate ${price}
+        </button>
+      </div>
+
+      <div>
+        <h2 className="text-3xl font-bold pb-4">{title}</h2>
         <p className="text-sm text-justify">{description}</p>
       </div>
     </div>

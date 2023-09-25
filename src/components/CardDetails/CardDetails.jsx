@@ -13,7 +13,7 @@ useEffect(()=>{
 
 
     return (
-        <div>
+        <div className="mx-4 lg:mx-0">
             <DetailsPage  card={card}></DetailsPage>
         </div>
     );
