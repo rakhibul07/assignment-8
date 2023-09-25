@@ -26,7 +26,7 @@ const Card = ({ card }) => {
         <div className="card-body">
           <h2
             className="w-16 text-xs text-center p-1 rounded-md font-medium"
-            style={{ backgroundColor: card_bg, color: text_color }}
+            style={{ backgroundColor: category_bg, color: text_color }}
           >
             {category}
           </h2>

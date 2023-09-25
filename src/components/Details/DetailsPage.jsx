@@ -33,13 +33,17 @@ const DetailsPage = ({ card }) => {
 
   return (
     <div>
+      <div>
       <img className="w-full h-[60vh] mx-auto" src={picture} />
-      <button
-        onClick={handleAddToDonation}
-        className="btn bg-[#FF444A] border border-none text-white hover:text-black relative bottom-20 left-10"
+     <div className="">
+     <button 
+        onClick={handleAddToDonation} style={{backgroundColor:text_color}}
+        className="btn border border-none text-white hover:text-black relative bottom-20 left-10"
       >
-        Donate $290
+        Donate ${price}
       </button>
+     </div>
+      </div>
       <div>
         <h2 className="text-3xl font-bold">{title}</h2>
         <p className="text-sm text-justify">{description}</p>
