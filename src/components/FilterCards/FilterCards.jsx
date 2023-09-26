@@ -1,20 +1,18 @@
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const Card = ({ card }) => {
-  const {
-    id,
-    picture,
-    title,
-    category,
-    category_bg,
-    card_bg,
-    text_color,
-    description,
-    price,
-  } = card || {};
-  return (
-    <div>
+const FilterCards = ({val}) => {
+    const {id,
+        picture,
+        title,
+        category,
+        category_bg,
+        card_bg,
+        text_color} = val;
+    return (
+        <div>
+               <div key={id}>
+               <div>
       <Link to={`/cards/${id}`}>
       <div
         className="card card-compact bg-base-100 shadow-md"
@@ -37,11 +35,11 @@ const Card = ({ card }) => {
       </div>
       </Link>
     </div>
-  );
+            </div>
+        </div>
+    );
 };
-
-Card.propTypes = {
-  card: PropTypes.object,
-};
-
-export default Card;
+FilterCards.propTypes = {
+    val: PropTypes.object
+  };
+export default FilterCards;

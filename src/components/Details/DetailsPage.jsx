@@ -5,13 +5,9 @@ const DetailsPage = ({ card }) => {
     id,
     picture,
     title,
-    category,
-    category_bg,
-    card_bg,
     text_color,
     description,
-    price,
-    donation_count
+    price
   } = card || {};
   const handleAddToDonation = () => {
     const donationArray = [];
@@ -27,7 +23,7 @@ const DetailsPage = ({ card }) => {
         localStorage.setItem("donation", JSON.stringify(donationArray));
         swal("Thank You!", "Successfully Added!", "success");
       } else {
-        swal("Error!", "No Duplicate!", "error");
+        swal("Error!", "Already Donate", "error");
       }
     }
   };
