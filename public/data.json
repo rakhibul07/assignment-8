@@ -8,7 +8,8 @@
     "card_bg": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Good Health is a boon. It is the real jewel of life, the most precious possession of man. If a man losses his health, the world losses all it charms for him. A good wealth of health can be obtained in a number of ways. It needs regular exercise, good food, good thoughts, and cleanliness. A healthy person is always happy.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "card_bg": "#FF444A26",
     "text_color": "#FF444A",
     "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
     "card_bg": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Wearing clothes helps in protecting our bodies from extreme weather conditions. It is very important to wear clothes in order to cover our body. Clothes protect our body from harmful UV rays coming from the Sun. UV rays are also known as Ultra Violet Radiations which are emitted from the sun and are extremely harmful.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "4",
@@ -41,7 +44,8 @@
     "card_bg": "#F8714726",
     "text_color": "#F87147",
     "description": "Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our bodies need to function. The energy in food is measured in units called calories",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "5",
@@ -52,7 +56,8 @@
     "card_bg": "#F8714726",
     "text_color": "#F87147",
     "description": "Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our bodies need to function. The energy in food is measured in units called calories",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "6",
@@ -63,7 +68,8 @@
     "card_bg": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Wearing clothes helps in protecting our bodies from extreme weather conditions. It is very important to wear clothes in order to cover our body. Clothes protect our body from harmful UV rays coming from the Sun. UV rays are also known as Ultra Violet Radiations which are emitted from the sun and are extremely harmful.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "7",
@@ -74,7 +80,8 @@
     "card_bg": "#FF444A26",
     "text_color": "#FF444A",
     "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "8",
@@ -85,7 +92,8 @@
     "card_bg": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Good Health is a boon. It is the real jewel of life, the most precious possession of man. If a man losses his health, the world losses all it charms for him. A good wealth of health can be obtained in a number of ways. It needs regular exercise, good food, good thoughts, and cleanliness. A healthy person is always happy.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "9",
@@ -96,7 +104,8 @@
     "card_bg": "#0052FF26",
     "text_color": "#0052FF",
     "description": "Good Health is a boon. It is the real jewel of life, the most precious possession of man. If a man losses his health, the world losses all it charms for him. A good wealth of health can be obtained in a number of ways. It needs regular exercise, good food, good thoughts, and cleanliness. A healthy person is always happy.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "10",
@@ -107,7 +116,8 @@
     "card_bg": "#FF444A26",
     "text_color": "#FF444A",
     "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "11",
@@ -118,7 +128,8 @@
     "card_bg": "#79C23F26",
     "text_color": "#79C23F",
     "description": "Wearing clothes helps in protecting our bodies from extreme weather conditions. It is very important to wear clothes in order to cover our body. Clothes protect our body from harmful UV rays coming from the Sun. UV rays are also known as Ultra Violet Radiations which are emitted from the sun and are extremely harmful.",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   },
   {
     "id": "12",
@@ -129,6 +140,7 @@
     "card_bg": "#F8714726",
     "text_color": "#F87147",
     "description": "Food is one of the basic necessities of life. Food contains nutrients—substances essential for the growth, repair, and maintenance of body tissues and for the regulation of vital processes. Nutrients provide the energy our bodies need to function. The energy in food is measured in units called calories",
-    "price": 290
+    "price": 290,
+    "donation_count": 1
   }
 ]

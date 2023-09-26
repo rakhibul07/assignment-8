@@ -1,26 +1,35 @@
-import { PieChart } from '@mui/x-charts/PieChart';
+
+import { useEffect, useState } from "react";
+import { Chart } from "react-google-charts";
 const Statistics = () => {
-  let yourDonation = 4;
-  
-  // Calculate the percentage of your donation
-  let yourDonationPercentage = (yourDonation / 12) * 100;
-  
-  return (
-    <div className='flex justify-center items-center'>
-      <PieChart
-        series={[
-          {
-            data: [
-              {name:"Total", value: 12, label: 'Total Donation' },
-              {name:"Given",id: 1, value: yourDonation, label: `${yourDonationPercentage.toFixed(2)}%`, format: value => `${value}%` },
-            ],
-          },
-        ]}
-        width={400}
-        height={200}
-      />
-    </div>
-  );
+const [donation, setDonation] = useState(0);
+useEffect(()=>{
+    const donationItem = JSON.parse(localStorage.getItem("donation"));
+    if(donationItem){
+        const donationAmount = donationItem.reduce((preValue, currentItem)=>preValue + currentItem.donation_count,0);
+        setDonation(donationAmount);
+    }
+   
+},[])
+
+    const yourDonation = donation;
+     const data = [
+        ["Task", "Hours per Day"],
+        ["Total Donation", 12],
+        ["Your Donation", yourDonation],
+       
+      ];
+    return (
+        <div className="h-screen">
+            <Chart
+      chartType="PieChart"
+      data={data}
+
+      width={"100%"}
+      height={"400px"}
+    />
+        </div>
+    );
 };
 
 export default Statistics;
