@@ -1,9 +1,15 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const BannerDetails = ({search,setSearch,handleClearInput,handleKeyDown,handleSearch}) => {
-    return (
-        <div>
-             <div
+const BannerDetails = ({
+  search,
+  setSearch,
+  handleClearInput,
+  handleKeyDown,
+  handleSearch,
+}) => {
+  return (
+    <div>
+      <div
         className="hero min-h-[500px]  lg:mb-8"
         style={{ backgroundImage: "url(https://i.ibb.co/gmqfPmb/cover.jpg)" }}
       >
@@ -22,14 +28,14 @@ const BannerDetails = ({search,setSearch,handleClearInput,handleKeyDown,handleSe
                 onChange={(event) => {
                   setSearch(event.target.value);
                   if (event.target.value === "") {
-                    handleClearInput(); // Call handleClearInput when input is empty
+                    handleClearInput(); 
                   }
                 }}
-                onKeyDown={handleKeyDown} // Call handleKeyDown on key down
+                onKeyDown={handleKeyDown} 
               />
               <button
                 className="btn text-white font-medium btn-error rounded-l-none"
-                onClick={handleSearch} // Call handleSearch on button click
+                onClick={handleSearch} 
               >
                 Search
               </button>
@@ -37,16 +43,15 @@ const BannerDetails = ({search,setSearch,handleClearInput,handleKeyDown,handleSe
           </div>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 BannerDetails.propTypes = {
-    search: PropTypes.string,
-    setSearch: PropTypes.func,
-    handleClearInput: PropTypes.func,
-    handleKeyDown: PropTypes.func,
-    handleSearch: PropTypes.func
-    
-  };
+  search: PropTypes.string,
+  setSearch: PropTypes.func,
+  handleClearInput: PropTypes.func,
+  handleKeyDown: PropTypes.func,
+  handleSearch: PropTypes.func,
+};
 export default BannerDetails;

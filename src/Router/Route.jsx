@@ -7,33 +7,31 @@ import Statistics from "../pages/Statistics/Statistics";
 import CardDetails from "../components/CardDetails/CardDetails";
 
 const myCreatedRoute = createBrowserRouter([
-{
+  {
     path: "/",
     element: <Layout></Layout>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {
-            path: "/",
-            element: <Home></Home>,
-            loader: ()=>fetch("/data.json")
-        },
-        {
-            path: "/donation",
-            element: <Donation></Donation>
-        },
-        {
-            path: "/statistics",
-            element: <Statistics></Statistics>
-        },
-        {
-            path: "/cards/:id",
-            element: <CardDetails></CardDetails>,
-            loader: ()=>fetch("/data.json")
-        },
-    ]
-    
-}
-])
-   
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/donation",
+        element: <Donation></Donation>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "/cards/:id",
+        element: <CardDetails></CardDetails>,
+        loader: () => fetch("/data.json"),
+      },
+    ],
+  },
+]);
 
-export default myCreatedRoute ;
+export default myCreatedRoute;

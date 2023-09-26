@@ -1,6 +1,4 @@
 import { NavLink } from "react-router-dom";
-
-
 const Navbar = () => {
     return (
         <div className="md:flex justify-between items-center ">
