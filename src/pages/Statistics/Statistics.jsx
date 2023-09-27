@@ -3,6 +3,7 @@ import { Chart } from "react-google-charts";
 
 const Statistics = () => {
   const [donation, setDonation] = useState(0);
+  const [totalDonation, setTotalDonation] = useState(12);
 
   useEffect(() => {
     const donationItem = JSON.parse(localStorage.getItem("donation"));
@@ -12,6 +13,10 @@ const Statistics = () => {
         0
       );
       setDonation(donationAmount);
+      setTotalDonation(12 - donationAmount);
+
+      localStorage.setItem("yourDonation", JSON.stringify(donationAmount));
+      localStorage.setItem("totalDonation", JSON.stringify(12 - donationAmount));
     }
   }, []);
 
@@ -19,12 +24,12 @@ const Statistics = () => {
 
   const data = [
     ["Task", "Donation"],
-    ["Total Donation", 12],
+    ["Total Donation", totalDonation],
     ["Your Donation", yourDonation],
   ];
 
-  const lightRed = "#FF444A"; 
-  const lightBlue = "#00C49F"; 
+  const lightRed = "#FF444A";
+  const lightBlue = "#00C49F";
 
   return (
     <div>
@@ -35,23 +40,19 @@ const Statistics = () => {
             data={data}
             options={{
               pieSliceText: "percentage",
-              legend: "none", 
-              height: 400, 
+              legend: "none",
+              height: 400,
               colors: [lightRed, lightBlue],
             }}
           />
         </div>
         <div className="flex justify-center space-x-4">
           <div className="flex items-center">
-            <div
-              className="w-12 h-2 bg-[#00C49F] mr-2"
-            ></div>
+            <div className="w-12 h-2 bg-[#00C49F] mr-2"></div>
             <span>Your Donation</span>
           </div>
           <div className="flex items-center">
-            <div
-              className="w-12 h-2 bg-[#FF444A] mr-2" 
-            ></div>
+            <div className="w-12 h-2 bg-[#FF444A] mr-2"></div>
             <span>Total Donation</span>
           </div>
         </div>
