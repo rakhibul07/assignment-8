@@ -1,7 +1,7 @@
 Three features of my project are given below:
 
-1.Health Campaign Features:  Allow users to create and donate to campaigns specifically aimed at covering medical expenses for individuals or families in need. Provide a directory of health clinics, hospitals, and resources for users seeking medical assistance or information.Promote and organize health awareness events, such as blood drives or vaccination clinics, and allow users to register or donate to support these events.
+1.Search Functionality: My website includes a search feature that allows users to search for content or items based on categories. Users can filter and find specific information easily.
 
-2.Education Campaign Features: Create campaigns specifically for funding scholarships, with details about the beneficiaries, their academic goals, and progress updates.Organize and promote campaigns to collect and distribute school supplies underprivileged students.Implement a feature that allows students and educators to track their academic progress and achievements through your platform.
+2.Donation Tracking: My website features a pie chart that visually represents total donations and individual user donations. This helps users track the progress of donations and see their personal contributions compared to the overall total.
 
-3.Food Campaign Features:  Enable users to donate funds specifically for providing meals to those who are hungry or in need, with options for one-time or recurring donations.Create a directory of food banks and pantries, making it easy for users to find and support local food-related initiatives.Organize and advertise food distribution events, such as food drives or soup kitchens, and allow users to participate or donate.
+3.Responsive Design: My website is designed to be responsive, meaning it adapts and looks good on various devices, including desktop computers, laptops, tablets, and mobile phones. This ensures a seamless user experience across different screen sizes and resolutions.
